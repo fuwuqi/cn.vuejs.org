@@ -43,7 +43,8 @@ Mustache 标签将会被替代为对应数据对象上 `msg` 属性的值。无�
 ### 属性
 
 Mustache 不能在 HTML 属性中使用，应使用 [v-bind 指令](../api/#v-bind)：
-
+这里不知道是我没理解还是文档错了。我在元素中使用{{data中的对象}}作为属性的值是可以的;
+例如：<div   v-bind:id="myid" class="{{isdis}}">{{myid}}</div>这样的时候class也是能取到值的
 ``` html
 <div v-bind:id="dynamicId"></div>
 ```
